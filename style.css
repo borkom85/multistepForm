@@ -242,7 +242,7 @@ sidebar
 }
 @media (max-width: 500px) {
   .main-container {
-    width: 80%;
+    width: 90%;
     margin: -10vh auto 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -297,6 +297,23 @@ sidebar
 }
 #plan .plans .active:hover {
   border: 1px solid rgb(179, 175, 222);
+}
+@media (max-width: 500px) {
+  #plan .plans {
+    flex-direction: column;
+  }
+  #plan .plans article {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #plan .plans article h4, #plan .plans article p {
+    margin-left: 50px;
+  }
+  #plan .plans article img {
+    top: 10px;
+  }
 }
 #plan #switcher {
   height: 50px;
