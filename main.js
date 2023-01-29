@@ -211,12 +211,14 @@ $(document).ready(function(){
             
             //$('#add-ons article:nth-child(1)').addClass('active');
             if(period != 1){
+                  window.onlineVal = 1;
                 $('#additional').append('<p>Online service <span>+$'+onlineVal+'/mo</span></p>')
-               // window.onlineVal = 1;
+             
             }else{
+                window.onlineVal = 10;
+
                 $('#additional').append('<p>Online service <span>+$'+onlineVal+'/yr</span></p>')
-               // window.onlineVal = 10;
-            }
+                         }
            
             
         }
@@ -225,12 +227,14 @@ $(document).ready(function(){
             
            // $('#add-ons article:nth-child(2)').addClass('active');
             if(period != 1){
-                //window.storageVal = 2;
-                $('#additional').append('<p>Larger storage <span>+$'+storageVal+'/mo</span></p>')
+                window.storageVal = 2;
+
+                 $('#additional').append('<p>Larger storage <span>+$'+storageVal+'/mo</span></p>')
                 
             }else{
+                window.storageVal = 20;
                 $('#additional').append('<p>Larger storage <span>+$'+storageVal+'/yr</span></p>')
-               // window.storageVal = 20;
+               
             }
         }
 
@@ -238,11 +242,12 @@ $(document).ready(function(){
             
            // $('#add-ons article:nth-child(3)').addClass('active');
             if(period != 1){
+                window.profileVal = 2;g
                 $('#additional').append('<p>Customizable profile <span>+$'+profileVal+'/mo</span></p>')
-               // window.profileVal = 2;
-            }else{
+                }else{
+                 window.profileVal = 20;
                 $('#additional').append('<p>Customizable profile <span>+$'+profileVal+'/yr</span></p>')
-               // window.profileVal = 20;
+               
             }
         }
     }
