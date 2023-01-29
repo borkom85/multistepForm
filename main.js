@@ -284,5 +284,9 @@ $(document).ready(function(){
           
     }
 
+    if($(window).width() < 501){
+        $('.steps').css({'position' : 'absolute', 'top' : 'calc(100vh - 70px)', 'left' : '0', 'width' : '100%', 'background' : '#fff', 'padding' : '0 5% 15px 5%', 'height' : '70px'})
+    }
+
    
 })

@@ -10,7 +10,7 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #EDF4FE;
   }
 }
 
@@ -33,6 +33,7 @@ body {
     padding: 0;
     border-radius: 0;
     margin: 0;
+    height: 100vh;
   }
 }
 
@@ -48,6 +49,11 @@ h2 {
   font-size: 30px;
 }
 
+@media (max-width: 500px) {
+  h2 {
+    font-size: 24px;
+  }
+}
 /****
 root
 ****/
@@ -163,7 +169,7 @@ toggler
 @media (max-width: 500px) {
   #sidebar {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-size: cover;
     margin: 0;
     background-position: 25% 85%;
@@ -249,6 +255,7 @@ sidebar
     border-radius: 15px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
     max-height: auto;
+    height: auto;
   }
 }
 
@@ -305,14 +312,14 @@ sidebar
   #plan .plans article {
     width: 100%;
     height: 50px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
   }
   #plan .plans article h4, #plan .plans article p {
     margin-left: 50px;
   }
   #plan .plans article img {
-    top: 10px;
+    top: 18px;
   }
 }
 #plan #switcher {
@@ -334,6 +341,15 @@ sidebar
 #plan #switcher .toggle1 {
   color: rgb(74, 124, 176);
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  #plan #switcher {
+    background-color: #EDF4FE;
+    box-sizing: content-box;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: -25px;
+  }
 }
 #plan .steps {
   justify-content: space-between;
@@ -402,12 +418,27 @@ sidebar
 #add-ons .add-ons article section span {
   color: #483EFF;
 }
+#add-ons .add-ons article:last-child {
+  margin-bottom: 0;
+}
 #add-ons .add-ons article:hover {
   border-color: #483EFF;
 }
 #add-ons .add-ons .active {
   border-color: #483EFF;
   background-color: rgba(0, 0, 0, 0.02);
+}
+@media (max-width: 500px) {
+  #add-ons .add-ons p {
+    font-size: 12px;
+  }
+  #add-ons .add-ons article {
+    height: 100px !important;
+    box-sizing: border-box;
+  }
+  #add-ons .add-ons article:last-child {
+    padding: 10px 20px;
+  }
 }
 #add-ons .steps {
   justify-content: space-between;
@@ -495,6 +526,11 @@ sidebar
   color: rgb(74, 124, 176);
   position: absolute;
   left: 90%;
+}
+@media (max-width: 500px) {
+  #finish .summary section:nth-child(3) p #finalfinale {
+    left: 85%;
+  }
 }
 #finish .steps {
   justify-content: space-between;
